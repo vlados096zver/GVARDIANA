@@ -1,0 +1,244 @@
+@import 'responsive'
+
+body
+	margin: 0
+	padding: 0
+	width: 100%
+	min-height: 100vh
+	overflow-x: hidden
+	text-size-adjust: none
+	-webkit-text-size-adjust: none
+	-ms-text-size-adjust: none
+	color: #363636
+	background-color: #fff
+	position: relative
+	font-size: 16px
+	line-height: 1.2
+	font-weight: 400
+	font-style: normal
+	font-family: Roboto
+
+* 
+	box-sizing: border-box
+
+*::after,
+*::before
+	box-sizing: border-box
+
+.visually-hidden
+	position: absolute
+	width: 1px
+	height: 1px
+	margin: -1px
+	bottom: 0
+	padding: 0
+	white-space: nowrap
+	clip-path: inset(100%)
+	clip: rect(0 0 0 0)
+	overflow: hidden
+
+
+img
+	max-width: 100%
+	height: auto
+
+.svg-about
+	display: none
+
+.wrap
+	background-color: #8B9E70
+	&__block
+		position: relative
+
+	&__decor1
+		position: absolute
+		top: 0px
+		left: 0px
+		width: 50px
+		height: 100%
+		color: #8B9E70
+		+media(lb)
+			display: none	
+		&:after
+			position: absolute
+			content: ' '
+			left: -20px
+			width: 1px
+			height: 100%
+			background-color: #B1BE9F
+
+		&:before
+			position: absolute
+			content: ' '
+			top: 224px
+			left: calc(-20px - 11px)
+			width: 22px
+			height: 22px
+			border-radius: 50%
+			background-color: transparent
+			border: 4px solid #fff
+
+
+	&__decor2
+		position: absolute
+		top: 0px
+		left: 0px
+		width: 50px
+		height: 100%
+		color: #8B9E70
+		+media(md)
+			display: none	
+		&:after
+			position: absolute
+			content: ' '
+			top: 0px
+			left: 300px
+			width: 1px
+			height: 100%
+			background-color: #B1BE9F
+
+	&__decor3
+		position: absolute
+		top: 0px
+		right: 0px
+		width: 100%
+		height: 100%
+		color: #8B9E70
+		+media(md)
+			display: none	
+		&:after
+			position: absolute
+			content: ' '
+			right: 75px
+			width: 1px
+			height: 100%
+			background-color: #B1BE9F
+
+		&:before
+			position: absolute
+			content: ' '
+			top: 224px
+			right: calc(75px - 8px)
+			width: 16px
+			height: 16px
+			border-radius: 50%
+			background-color: #fff
+			border: 4px solid #fff
+
+
+.container
+	max-width: 1450px
+	padding: 0 25px
+	margin: 0 auto
+	+media(sm)
+		padding: 0 10px
+
+	&--inner
+		max-width: 1250px
+
+	&--elem
+		max-width: 1970px
+
+.title
+	font-size: 48px	
+	line-height: 1.2	
+	color: #7c8d63
+	text-align: center	
+	text-transform: uppercase
+	padding-bottom: 42px
+	font-weight: 100	
+	+media(mdx)
+		font-size: 36px
+		padding-bottom: 25px
+	+media(sm)
+		font-size: 30px
+	&--inner
+		color: #fff
+
+.details
+	cursor: pointer
+	display: block
+	max-width: 150px
+	width: 100%
+	font-size: 14px
+	line-height: 1.2
+	color: #333333
+	box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1)
+	background-color: #fff
+	border: none
+	outline: none
+	border-radius: 5px
+	text-align: center
+	padding: 17px 5px
+	margin: 0 auto
+	font-weight: 700
+	font-family: Roboto
+	transition: 0.25s background-color, 0.25s color
+	&:hover
+		color: #fff
+		background-color: #7C8D63
+	&--send
+		position: relative
+		z-index: 3
+		margin: 0px	
+		+media(lgs)
+			margin-bottom: 35px	
+		+media(sm)
+			margin-bottom: 30px
+
+.input	
+	display: block
+	width: 100%
+	font-size: 18px
+	line-height: 1.25
+	color: #333333
+	background-color: #fff
+	border: 2px solid #fff
+	text-transform: uppercase
+	box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1)
+	border-radius: 5px
+	padding: 12px 20px
+	&::placeholder
+		color: #333333
+	&:focus::placeholder
+		color: transparent
+	&--area
+		min-height: 200px
+		resize: none
+
+	&.form-fail
+		border-color: #d8352a	
+
+.breadcrumbs
+	&__list
+		display: flex	
+		flex-wrap: wrap
+		align-items: center
+		padding-bottom: 35px
+		li
+			display: block
+			cursor: default
+			margin-bottom: 15px
+			&:not(:last-child)
+				margin-right: 30px
+				transition: 0.3s color
+				position: relative
+				&:after
+					position: relative
+					right: -15px
+					line-height: 1
+					content: '/'
+					color: #ABABAB
+
+
+		li, a
+			font-size: 16px
+			line-height: 1.2
+			color: #ABABAB
+			text-transform: uppercase
+			transition: 0.25s color
+			font-weight: 200
+
+		a
+			&:hover
+				color: #7C8D63

@@ -1,0 +1,73 @@
+@import 'responsive'
+
+.content
+	position: relative
+	background-color: #8B9E70	
+	margin-bottom: 60px
+	&:after,
+	&:before
+		position: absolute
+		content: ' '
+		width: 150px
+		background-repeat: no-repeat
+		+media(sm)
+			display: none
+
+	&:after
+		top: 60px
+		left: 0px
+		height: 300px	
+		background-image: url(../img/decor-1.png)
+
+	&:before
+		bottom: 58px
+		right: 3%	
+		height: 150px	
+		background-image: url(../img/decor-2.png)
+
+	&__text
+		padding-top: 15px	
+		margin-bottom: 45px
+		p
+			font-size: 18px	
+			line-height: 1.67	
+			color: #fff
+			padding-bottom: 1.5em	
+
+	&__decor
+		position: relative
+		max-width: 1400px
+		padding: 0px
+		padding-top: 65px	
+		padding-bottom: 80px
+		margin: 0 auto
+		&:after,
+		&:before
+			position: absolute
+			content: ' '
+			
+		&:after
+			top: 0px
+			right: 0px
+			width: 1px
+			height: 100%
+			background-color: #B1BE9F
+	
+		&:before
+			z-index: 3
+			top: 195px
+			right: -8px
+			width: 16px	
+			height: 16px	
+			border-radius: 50%
+			background-color: #fff
+			box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25)
+
+		&:after,
+		&:before
+			+media(verybig)
+				display: none
+
+	&__wrap
+		position: relative
+		z-index: 3

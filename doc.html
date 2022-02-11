@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="uk">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title>GVARDIANA</title>
+        <link rel="stylesheet" href="fonts/fonts.css">
+        <link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+
+
+    <header class="main-header">
+        <div class="container container--elem">
+            <div class="main-header__block">
+                <a href="#" class="main-header__logo">
+                    <div class="main-header__holder">
+                        <img src="img/icons/logo.svg" alt="">
+                    </div>
+                    <span class="main-header__desc">gvardiana</span>
+                </a>
+                <div class="main-header__wrap">
+                    <div class="mobile-wrap">
+                        <p class="main-header__description">Меню</p>
+                        <div class="main-nav__toggle">
+                            <span class="line-burger"></span>
+                         </div>
+                    </div>
+                    <ul class="main-header__list">
+                        <li>
+                            <a  href="#" class="main-header__link">Про нас</a>
+                        </li>
+                        <li>
+                            <a  href="#" class="main-header__link">Послуги</a>
+                        </li>
+                        <li>
+                            <a  href="#" class="main-header__link">Захист прав споживачів</a>
+                        </li>
+                        <li>
+                            <a  href="#" class="main-header__link main-header__link--active">Документи</a>
+                        </li>
+                        <li>
+                            <a  href="#" class="main-header__link">Контакти</a>
+                        </li>
+                    </ul>
+                </div>
+                <button type="button" class="details details--send">Написати нам</button>
+            </div>
+        </div>
+    </header>
+
+<section class="doc">
+    <div class="container">
+        <ul class="breadcrumbs__list"> 
+            <li><a href="#">Головна</a></li>
+            <li>Документи</li>
+         </ul>
+       <h1 class="title">Документи</h1>
+       <div class="doc__wrap">
+           <div class="doc__item">
+               <p class="doc__title">Примірний договір факторингу</p>
+               <p class="doc__name">pdf</p>
+               <a href="" class="doc__load">Завантажити</a>
+           </div>
+           <div class="doc__item">
+               <p class="doc__title">Примірний договір факторингу</p>
+               <p class="doc__name">pdf</p>
+               <a href="" class="doc__load">Завантажити</a>
+           </div>
+           <div class="doc__item">
+               <p class="doc__title">Примірний договір факторингу</p>
+               <p class="doc__name">pdf</p>
+               <a href="" class="doc__load">Завантажити</a>
+           </div>
+       </div><!--end doc__wrap-->
+       <a href="#" class="doc__all"> Усі документи</a>
+    </div>
+</section>
+
+<section class="write">
+    <div class="container">
+        <div class="write__inner">
+            <h3 class="title title--inner">Напишіть нам</h3>
+            <form action="#" class="write__form">
+                <div class="write__wrap">
+                    <div class="write__item">
+                        <input id="w_fio" type="text" placeholder="ПІБ" class="input">
+                    </div>
+                    <div class="write__item">
+                        <input id="w_email" type="text" placeholder="Eмейл" class="input">
+                    </div>
+                    <div class="write__item">
+                        <input id="w_tel" type="tel" placeholder="Телефон" class="input">
+                        
+                    </div>
+                    <div class="write__item">
+                        <textarea id="w_msg" type="text" placeholder="Повідомлення" class="input input--area"></textarea>
+                    </div>
+                </div> 
+                <p class="write__error write__error--fio" style="display: none;">Некоректний ПІБ</p>
+                <p class="write__error write__error--email" style="display: none;">Некоректний емейл</p>
+                <p class="write__error write__error--tel" style="display: none;">Некоректний телефон</p>
+                <button id="w_btn" class="write__btn">Написати нам</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<section class="contacts">
+    <div class="container">
+       <h3 class="title">Контакти</h3>
+       <div class="contacts__wrap">
+           <p class="contacts__item contacts__item--phone">+380 95 037 25 90</p>
+           <p class="contacts__item contacts__item--email">info@fi-active.com</p>
+       </div>
+       <p class="contacts__address">03057, київ, вул. дегтярівська, 33-б, офіс 307</p>
+       <div class="contacts__text">
+           <p>пн-пт з 9:00 до 18:00</p>
+           <p>обідня перерва з 13:00 до 14:00</p>
+       </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__wrap">
+            <div class="footer__item">
+                <img src="img/mastercard.png" alt="mastercard">
+            </div>
+             <div class="footer__item">
+                <img src="img/visa.png" alt="visa">
+            </div>
+        </div>
+        <div class="footer__text">
+            <p>© Copyright 2019-2021 FI ACTIVE LLC. Всі права захищені. Будь-які матеріали та файли, розміщені на цьому веб-сайті, не можуть бути відтворені в будь-якій формі, будь-якими способами, повністю або частково, без попередньої письмової згоди FI ACTIVE. Переклад, будь-які зміни матеріалів сайту, а також будь-які інші дії, включаючи видалення, зміну ледь помітної інформації без згоди власників авторських прав, не дозволяються</p>
+        </div>
+        <p class="footer__desc">developed by garno.tech</p>
+    </div>
+</footer>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/main.js"></script>
+
+    </body>
+</html>
+
